@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="none">
+    <ion-item *ngFor="let item of datalist, let i = index" (click)="second(i)">
+      <ion-icon slot="start" color="medium" name="cube"></ion-icon>
+      <ion-label>{{item.title}}</ion-label>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
